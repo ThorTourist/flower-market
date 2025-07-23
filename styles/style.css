@@ -17,9 +17,24 @@
   font-weight: 400;
   font-style: normal;
 }
+.dark-01 {
+  color: #252432;
+  font-weight: 700;
+}
+.dark-02 {
+  color: #8987a1;
+}
+.dark-03 {
+  color: black;
+}
+.orange {
+  color: #e95a08;
+}
+
 /* shared style */
 body {
   background-color: #f5f8ff;
+  max-width: 100%;
 }
 
 .display-flex {
@@ -30,13 +45,16 @@ body {
 
 .header-container {
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  gap: 520px;
+  margin-right: 62px;
 }
 .navbar {
   justify-content: space-between;
-  gap: 200px;
+  /* gap: 200px; */
   align-items: center;
   max-width: 1140px;
+  /* width: 50%; */
   height: 71px;
   margin-top: 20px;
 }
@@ -51,4 +69,46 @@ body {
 
 .nav-item {
   margin-right: 20px;
+}
+
+.nav-links {
+  align-items: center;
+}
+
+.banner-image {
+  max-width: 550px;
+}
+/* banner Styles */
+.section-title {
+  font-weight: 700;
+  font-size: 3.8rem;
+  margin: 0 0;
+}
+.banner-container {
+  max-width: 1140px;
+  justify-content: center;
+  align-items: center;
+  margin: 120px auto;
+}
+
+.banner-description {
+  margin-top: 0px;
+}
+
+/* card-styles */
+.card {
+  text-align: center;
+}
+.price {
+  font-weight: bold;
+}
+.flower-card-section {
+  text-align: center;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  max-width: 1440px;
+  margin: 20px auto;
 }

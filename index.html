@@ -5,29 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flower Market</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
   </head>
 
   <body>
-    <header class="header-container">
-      <nav class="navbar display-flex">
-        <div>
-          <img class="logo" src="images/logo.png" alt="" />
-        </div>
-
-        <div class="nav-container">
+    <header class="header-container display-flex">
+      <div>
+        <img class="logo" src="images/logo.png" alt="" />
+      </div>
+      <div class="nav-container">
+        <nav class="navbar">
           <ul class="nav-links display-flex">
-            <li class="nav-item"><a href="" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Shop</a></li>
-            <li class="nav-item"><a href="" class="nav-link">About us</a></li>
-            <li class="nav-item"><a href="" class="nav-item">Cart ($56)</a></li>
+            <li class="nav-item">
+              <a href="" class="nav-link dark-01">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link dark-02">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link dark-02">About us</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link dark-03"
+                href=""
+                style="display: flex; align-items: center; gap: 6px"
+              >
+                <img
+                  class="dark-03"
+                  src="images/cart.png"
+                  alt="Cart"
+                  width="40"
+                  height="40"
+                />
+                Cart ($56)
+              </a>
+            </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
+
     <main>
-      <div class="banner-container display-flex">
-        <div class="banner">
-          <h1 class="section-title noto-serif-normal">ALWAYS FRESH FLOWER</h1>
+      <section class="banner-container display-flex">
+        <div>
+          <h1 class="section-title noto-serif-normal">
+            ALWAYS <span class="orange">FRESH FLOWER</span>
+          </h1>
           <p class="banner-description">
             Indulge your senses with the beauty and fragrance of our fresh
             flower shop. From classic roses to exotic blooms, we offer a wide
@@ -37,7 +61,76 @@
         <div class="banner-image">
           <img src="images/hero-flower.png" alt="" />
         </div>
-      </div>
+      </section>
+
+      <section class="flower-card-section">
+        <div class="flower-card">
+          <h1 class="section-title">Our Plants</h1>
+          <p class="card-box-description">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh.
+          </p>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img src="images/sample-flower-image.png" alt="" />
+            <p class="card-description">
+              Lily Blossom <br />
+              <span class="price">20 USD</span>
+            </p>
+          </div>
+          <div class="card">
+            <img src="images/sample-flower-image.png" alt="" />
+            <p class="card-description">
+              Lily Blossom <br />
+              <span class="price">20 USD</span>
+            </p>
+          </div>
+          <div class="card">
+            <img src="images/sample-flower-image.png" alt="" />
+            <p class="card-description">
+              Lily Blossom <br />
+              <span class="price">20 USD</span>
+            </p>
+          </div>
+          <div class="card">
+            <img src="images/sample-flower-image.png" alt="" />
+            <p class="card-description">
+              Lily Blossom <br />
+              <span class="price">20 USD</span>
+            </p>
+          </div>
+          <div class="card">
+            <img src="images/sample-flower-image.png" alt="" />
+            <p class="card-description">
+              Lily Blossom <br />
+              <span class="price">20 USD</span>
+            </p>
+          </div>
+          <div class="card">
+            <img src="images/sample-flower-image.png" alt="" />
+            <p class="card-description">
+              Lily Blossom <br />
+              <span class="price">20 USD</span>
+            </p>
+          </div>
+          <div class="card">
+            <img src="images/sample-flower-image.png" alt="" />
+            <p class="card-description">
+              Lily Blossom <br />
+              <span class="price">20 USD</span>
+            </p>
+          </div>
+          <div class="card">
+            <img src="images/sample-flower-image.png" alt="" />
+            <p class="card-description">
+              Lily Blossom <br />
+              <span class="price">20 USD</span>
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
