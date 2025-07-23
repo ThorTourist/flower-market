@@ -112,3 +112,15 @@ body {
   max-width: 1440px;
   margin: 20px auto;
 }
+
+/* button style */
+.btn-primary {
+  max-width: 270px;
+  background-color: #e95a08;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  padding: 20px 90px;
+  border: none;
+  margin-bottom: 40px;
+}
