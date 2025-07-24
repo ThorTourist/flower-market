@@ -1,4 +1,12 @@
 /* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
 .noto-serif-normal {
@@ -9,14 +17,6 @@
   font-variation-settings: "wdth" 100;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
-.inter-normal {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
 .dark-01 {
   color: #252432;
   font-weight: 700;
@@ -93,6 +93,7 @@ body {
 
 .banner-description {
   margin-top: 0px;
+  width: 800px;
 }
 
 /* card-styles */
@@ -111,6 +112,7 @@ body {
   justify-content: center;
   max-width: 1440px;
   margin: 20px auto;
+  gap: 5px;
 }
 
 /* button style */
@@ -120,7 +122,198 @@ body {
   text-align: center;
   color: white;
   font-weight: 600;
-  padding: 20px 90px;
+  padding: 20px 50px;
   border: none;
   margin-bottom: 40px;
+}
+/* flower-lover-deals */
+
+.flower-lover-section {
+  border: 5px solid #e95a08;
+  height: 650px;
+  width: 1140px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  text-align: center;
+  gap: 0px;
+}
+.flower-store-title {
+  text-align: left;
+  padding-left: 15px;
+}
+.flower-store-description {
+  text-align: left;
+  width: 540px;
+  font-size: medium;
+}
+
+/* deal Styles */
+.latest-deal-section {
+  justify-content: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  text-align: center;
+  gap: 0px;
+}
+.offers {
+  justify-content: center;
+  text-align: center;
+  /* border: 1px solid red; */
+  max-width: 1100px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  text-align: center;
+  gap: 0px;
+}
+.offer-title {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 0px;
+}
+.offer-description {
+  width: 600px;
+  text-align: center;
+  justify-items: center;
+  margin: 0 auto;
+  padding-bottom: 24px;
+  padding-top: 0px;
+}
+.offer-amount {
+  font-weight: bold;
+  color: white;
+  font-size: 2rem;
+}
+.btn-3 {
+}
+.offer-bloom-plant {
+  /* border: 1px solid red; */
+  background-image: url(../images/deal-bloom.png);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  width: 395px;
+  height: 200px;
+}
+.offer-Ana-plant {
+  /* border: 1px solid red; */
+  background-image: url(../images/deal-ana.png);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 6px;
+  margin-top: 5px;
+  margin: 5px 5px;
+  width: 395px;
+  height: 200px;
+}
+.offer-zabo-plant {
+  /* border: 1px solid red; */
+  background-image: url(../images/deal-zabo.png);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 6px;
+  margin: 5px 5px;
+  width: 600px;
+  height: 400px;
+}
+/* form styles */
+.form-section {
+  background-image: url(../images/news-letter-bg.png);
+  height: 550px;
+  width: 1140px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  text-align: center;
+  gap: 0px;
+}
+.form-section input {
+  padding: 15px;
+  padding-right: 0px;
+  font-size: 1rem;
+  border: none;
+  margin-right: 0px;
+  align-items: center;
+}
+
+.form-join {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+.email {
+  font-size: 1.2rem;
+  border: none;
+  width: 380px;
+  padding: 6px 6px;
+}
+.btn-secondary {
+  max-width: 270px;
+  background-color: #e95a08;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.25rem;
+  height: 50px;
+  margin-left: 0;
+  padding: 10px 40px;
+  border: none;
+  margin-bottom: 40px;
+}
+.input-button {
+  gap: 0px;
+}
+/* footer styles */
+.footer-container {
+  max-width: 1120px;
+  height: 300px;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 0px;
+  align-items: center;
+}
+.footer-description {
+  max-width: 350px;
+}
+.footer-links-1 ul {
+  max-width: 228px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-links-1 a {
+  /* width: 100px; */
+  text-decoration: none;
+  margin: 0px auto;
+}
+
+.footer-links-2 {
+  max-width: 128px;
+}
+.footer-links-2 a {
+  width: 100px;
+  text-decoration: none;
+  margin: 50px auto;
+}
+
+.social-media-links {
+  max-width: 216px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.social-media-links li {
+  list-style: none;
+  margin: 10px;
+  text-decoration: none;
 }
