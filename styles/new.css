@@ -7,7 +7,6 @@
   font-weight: 400;
   font-style: normal;
 }
-
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
 .noto-serif-normal {
@@ -19,30 +18,26 @@
 }
 
 * {
-  margin: 0px;
+  margin: 0;
+  padding: 0;
 }
-
 .dark-01 {
   color: #252432;
   font-weight: 700;
 }
-
 .dark-02 {
   color: #8987a1;
 }
-
 .dark-03 {
   color: black;
 }
-
 .orange {
   color: #e95a08;
 }
 
 /* shared style */
-body {
+html body {
   background-color: #f5f8ff;
-  max-width: 100%;
 }
 
 .display-flex {
@@ -52,9 +47,19 @@ body {
 /* header styles */
 
 .header-container {
-  padding: 20px 150px;
+  max-width: 1140px;
+  display: flex;
+  justify-content: center;
+
+  margin: 0 auto;
+}
+.navbar {
   justify-content: space-between;
-  margin: 0px auto;
+  align-items: center;
+  max-width: 1140px;
+  /* width: 50%; */
+  height: 71px;
+  margin-top: 20px;
 }
 
 .navbar ul {
@@ -65,134 +70,134 @@ body {
   text-decoration: none;
 }
 
-.spec {
-  gap: 20px;
+.nav-item {
+  margin-right: 20px;
 }
 
 .nav-links {
   align-items: center;
-  gap: 20px;
-}
-
-/* banner Styles  */
-.banner-container {
-  padding: 20px 150px;
-  justify-content: center;
-  align-items: center;
-  margin: 0px auto;
-}
-
-.banner-text {
-  max-width: 50%;
 }
 
 .banner-image {
-  max-width: 50%;
+  max-width: 550px;
 }
-
+/* banner Styles */
 .section-title {
   font-weight: 700;
   font-size: 3.8rem;
+  margin: 0 0;
+}
+.banner-container {
+  max-width: 1140px;
+  justify-content: center;
+  align-items: center;
+  margin: 120px auto;
+  width: 25vmax;
+  margin: auto;
 }
 
 .banner-description {
   margin-top: 0px;
-  color: gray;
+  width: 800px;
 }
 
 /* card-styles */
 .card {
   text-align: center;
 }
-
 .price {
   font-weight: bold;
 }
-
 .flower-card-section {
-  padding: 20px 150px;
   text-align: center;
 }
-
 .card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
-  margin: 0px auto;
-  gap: 15px;
+  max-width: 1440px;
+  margin: 20px auto;
+  gap: 5px;
 }
 
 /* button style */
 .btn-primary {
-  max-width: 270px;
+  max-width: 400px;
   background-color: #e95a08;
   text-align: center;
   color: white;
   font-weight: 600;
-  padding: 20px 50px;
+  font-size: 1.3rem;
+
+  padding: 20px 70px;
   border: none;
   margin-bottom: 40px;
 }
-
 /* flower-lover-deals */
 
 .flower-lover-section {
-  padding: 20px 150px;
+  border: 5px solid #e95a08;
+  height: 650px;
+  width: 1140px;
   justify-content: center;
   align-items: center;
+  align-content: center;
   margin: 0 auto;
   text-align: center;
-  gap: 20px;
+  gap: 0px;
   position: relative;
 }
-
+.trusted-badge {
+  position: absolute;
+  right: 40%;
+  top: -15%;
+  transform: translate(-50% -50%);
+}
 .flower-store-title {
   text-align: left;
   padding-left: 15px;
 }
-
 .flower-store-description {
   text-align: left;
+  width: 540px;
   font-size: medium;
 }
-
-.flower-image img {
-  width: 20%;
-}
-
-.flower-image {
-  position: absolute;
-  top: -10%;
-  left: 8%;
-}
-
-/* deal Styles */
-.latest-deal-section {
-  padding: 20px 150px;
+.trusted-badge {
   justify-content: center;
   align-items: center;
+  margin-left: 1600px;
+  margin-top: auto;
+}
+/* deal Styles */
+.latest-deal-section {
+  justify-content: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   margin: 0 auto;
   text-align: center;
-  gap: 20px;
-  text-align: center;
+  gap: 0px;
 }
-
 .offers {
   justify-content: center;
   text-align: center;
+  /* border: 1px solid red; */
+  max-width: 1100px;
+  justify-content: center;
   align-items: center;
+  align-content: center;
   margin: 0 auto;
   text-align: center;
-  gap: 20px;
+  gap: 0px;
 }
-
 .offer-title {
   font-weight: bold;
   font-size: 3rem;
   margin-bottom: 0px;
 }
-
 .offer-description {
+  width: 600px;
   text-align: center;
   justify-items: center;
   margin: 0 auto;
@@ -200,37 +205,36 @@ body {
   padding-top: 0px;
 }
 
-.offer-amount {
+.offer-amount-1 {
+  font-weight: bold;
+  color: white;
+  font-size: 1.6rem;
+}
+.offer-amount-2 {
+  font-weight: bold;
+  color: white;
+  font-size: 1.6rem;
+}
+.offer-amount-3 {
   font-weight: bold;
   color: white;
   font-size: 2rem;
 }
 
-.btn-3 {
-  text-decoration: underline;
-  background: transparent;
-  color: #eeeae8;
-  font-size: 20px;
-  border: none;
-}
-
 .offer-bloom-plant {
+  /* border: 1px solid red; */
   background-image: url(../images/deal-bloom.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   justify-content: center;
   align-items: center;
   align-content: center;
-  border-radius: 10px;
+  border-radius: 6px;
   margin-bottom: 5px;
   width: 395px;
   height: 200px;
 }
-
 .offer-Ana-plant {
+  /* border: 1px solid red; */
   background-image: url(../images/deal-ana.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -240,11 +244,9 @@ body {
   width: 395px;
   height: 200px;
 }
-
 .offer-zabo-plant {
+  /* border: 1px solid red; */
   background-image: url(../images/deal-zabo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -253,53 +255,49 @@ body {
   width: 600px;
   height: 400px;
 }
-
 /* form styles */
 .form-section {
   background-image: url(../images/news-letter-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 300px;
-  width: 100%;
-  padding: 20px 0px;
-  padding-top: 200px;
+  height: 550px;
+  width: 1140px;
   justify-content: center;
   align-items: center;
+  align-content: center;
   margin: 0 auto;
+  margin-top: 40px;
   text-align: center;
+  gap: 0px;
 }
-
-.inp {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.form-section input {
+/* .form-section input {
   padding: 15px;
   padding-right: 0px;
   font-size: 1rem;
   border: none;
   margin-right: 0px;
   align-items: center;
-}
+} */
 
+.input-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-button button {
+  margin-left: -5px;
+  border: none;
+}
 .form-join {
   font-size: 2rem;
   font-weight: bold;
   color: white;
 }
-
-.email {
+/* .email {
   font-size: 1.2rem;
   border: none;
   width: 380px;
   padding: 6px 6px;
-}
-
-.btn-secondary {
+} */
+/* .btn-secondary {
   max-width: 270px;
   background-color: #e95a08;
   text-align: center;
@@ -307,65 +305,58 @@ body {
   font-weight: 600;
   font-size: 1.25rem;
   height: 50px;
-  margin-left: -9px;
+  margin-left: 0;
+  padding: 10px 40px;
   border: none;
-}
-
-.input-button {
-  gap: 0px;
-}
+  margin-bottom: 40px;
+} */
 
 /* footer styles */
 .footer-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 20px 150px;
-  height: 300px;
-  margin: 0 auto;
+  height: 650px;
+  width: 1140px;
   justify-content: center;
-  gap: 0px;
   align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  text-align: center;
+  gap: 40px;
 }
-
 .footer-description {
   max-width: 350px;
 }
-
 .footer-links-1 ul {
   max-width: 228px;
   display: flex;
   flex-direction: column;
   text-align: center;
+  row-gap: 15px;
 }
 
 .footer-links-1 a {
-  width: 100px;
+  /* width: 100px; */
   text-decoration: none;
-  margin: 5px auto;
+  margin: 0px auto;
 }
-
+.footer-links-2 a {
+  /* width: 100px; */
+  text-decoration: none;
+  margin: 0px auto;
+}
 .footer-links-2 ul {
   max-width: 228px;
   display: flex;
   flex-direction: column;
   text-align: center;
+  row-gap: 15px;
 }
-
-.footer-links-2 a {
-  width: 100px;
-  text-decoration: none;
-  margin: 5px auto;
-}
-
 .social-media-links {
-  max-width: 216px;
-  margin-top: -90px;
+  /* justify-content: center; */
   align-items: center;
-  justify-content: top;
+  max-width: 216px;
+  margin-bottom: 150px;
+  gap: 10px;
 }
-
-.social-media-links li {
-  list-style: none;
-  margin: 10px;
+.social-media-links a {
   text-decoration: none;
 }
